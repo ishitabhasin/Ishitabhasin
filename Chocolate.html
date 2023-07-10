@@ -1,0 +1,299 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Portflio Tableau</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>ISHITA</strong> BHASIN</a>
+									<ul class="icons">
+										
+							
+									</ul>
+								</header>
+
+							<!-- Content -->
+							<section>
+								<header class="main">
+									<h1>Chocolate Bar Ratings
+										 - Python Project</h1>
+								</header>
+
+								<span class="image main"><img src="images/chocolate main image.webp" alt="" style="width: 80% !important"/></span>
+								
+								<h2>Motivation:</h2>
+									<p>Sales have been always considered to be the engine that allows a business to go for miles and miles. However, how useful is to reach far distances when the journey has left the engine drowned? This is what happens when the focus is mostly on top line, and not how profit is being made.</p>
+									
+									<h2> Business Questions:</h2>
+								
+															<ol>
+						
+																<li>What is the relationship between cocoa solids percentage and rating?</li>
+																<li>Which countries are the largest producers of chocolate?</li>
+																<li>Which country produces the best chocolate?</li>
+																<li>What have the average chocolate ratings been over the years?</li>
+							
+												
+															</ol>
+									<h2>Context</h2>
+									<p>This is a project I did as part of my course in Data Analytics with Career Foundry.On this project I decided to use the Chocolate Bar Ratings dataset which contains expert ratings of over 1,700 individual chocolate bars, along with information on their regional origin, percentage of cocoa, the variety of chocolate bean used and where the beans were grown.
+									</p>
+									<h2>Dataset</h2>
+									<p>The database used for this project can be found in the following 
+										<a href="https://www.kaggle.com/datasets/rtatman/chocolate-bar-ratings"> link.</a> </p>
+								
+										<ul class="actions">
+											<li><a href="https://github.com/ishitabhasin/Chocolate-Bar-Rating-Analysis	" class="button primary">View the Scripts of the Project</a></li>
+										</ul>		
+									 	
+									<ul class="actions">
+										<li><a href="https://public.tableau.com/app/profile/ishita2218/viz/ChocolateBarRatingsStoryboard/Story1" class="button primary">View the Storyboard in Tableau</a></li>
+									</ul>
+									<h2>Limitations</h2>
+									<p>
+										<li>This data only takes into account the ratings for the dark chocolates, so does not provide a whole picture  of the 
+											chocolate                             industry.</li>
+										<li>There are more than 800 entries missing from the 'Bean Type' column, removing which can give us false results.</li>
+										<li>There are about 74 entries missing from the column 'Bean Origin', which can skew the results geographically.</li>
+
+
+									</p>
+									<hr class="major" />
+									<h2> 1. Data Exploration </h2>
+									
+									<p>The Scatter Plot, Heat Map & Pair Plot have been used to further explore the relationship between the Cocoa Percentage and Rating of chocolate bars. 
+										These help us to visually see at one glance if a significant relationship exists.
+    
+										 </p>
+										 
+										 <div class="box alt">
+											<div class="row gtr-50 gtr-uniform">
+												<div class="col-4"><span class="image fit"><img src="images/Scatter plot choc.png" alt="" /></span></div>
+												<div class="col-3"><span class="image fit"><img src="images/Heatmap choc.png" alt="" /></span></div>
+												<div class="col-3"><span class="image fit"><img src="images/pairplot choc.png" alt="" /></span></div>
+												
+										 <p>Using these visualizations, I can answer the question <b>"What's the relationship between cocoa solids percentage and rating?</b>.
+
+											The plots clearly shows that <b>there is a very weak relationship between cocoa percentage and ratings</b>.
+										
+											
+											Given these statistics,  three  groups were created
+											for further analysis : 
+											
+											
+											<div class="table-wrapper">
+												<table>
+													<thead>
+														<tr>
+															<th>Cocoa Percent Category</th>
+															<th>Description</th>
+															
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>Low Cocoa Percent</td>
+															<td> Less than 50% </td>
+															
+														</tr>
+														<tr>
+															<td>Medium Cocoa Percent</td>
+															<td> Purchases between 50%- 80%</td>
+															
+														</tr>
+														<tr>
+															<td>High Cocoa Percent</td>
+															<td> Above 80% </td>
+														</tr>
+														
+													</tbody>
+													<tfoot>
+														<tr>
+															<td colspan="2"></td>
+															
+														</tr>
+													</tfoot>
+												</table>
+											</div>
+		
+									
+										 
+									<div class="row">
+										<ul>
+										<h3>Chocolate Companies located Worldwide</h3>
+										<p>The map shows the spread of chocolate manufacturers by rating around the world.
+											The darkest shade represents the highest ratings.
+											The white color represent the NaN.</p>
+										<span class="image fit"><img src="images/Choco map world.png" alt="" style="width: 70% !important"/></span>
+										<p>
+											<li style="color:#800000">Based on this choropleth, the companies that produces the best chocolate bars are located in Canada, Honduras, Costa Rica, Columbia, Peru, Chile, Argentina, Austrailia, France, and Germany.</li>
+											<li style="color:#800000">It is surprising to see that even though USA is the largest chocolate manufaturer, as per ratings it is not in the top list</li>
+
+										</p>
+
+									</ul>
+
+
+
+
+										<h3> The countries producing the most chocolates </h3>
+										<span class="image fit"><img src="images/top 10 choco countries.png" alt="" style="width: 70% !important"/></span>
+										<p style="color:#800000">The U.S.A is the largest producer of chocolate globally, followed by France and Canada, respectively.</p>
+										
+										<h3>Which counties are the top and bottom 5 in terms of bean quality? </h3>
+										<span class="image fit"><img src="images/Best Bean.png" alt="" style="width: 70% !important"/></span>
+										<p style="color:#800000">On average, the best beans come from Peru; the worst come from Ghana & Madagascar</p>
+										<ul>
+										<h3>What have been the Avergae Chocolate ratings over the years?</h3>
+										<span class="image fit"><img src="images/Choch ratings over yrs.png" alt="" style="width: 80% !important"/></span>
+										<p >
+										<li style="color:#800000">The lowest rating was 3 in 2008.</li>
+										<li style="color:#800000">Since then to 2011, there was an increase in average ratings and in 2011 it was at 3.25.</li>
+										<li style="color:#800000">The ratings peaked in 2017 to 3.25.</li>
+										 </p>
+										</ul>
+									
+										
+												
+									
+										
+										</div>
+									</div>
+									
+									<hr />
+									<h2> 2. Linear Regression Analysis</h2>
+									<h4 style="color:#207837">"Hypothesis: As the cocoa percentage of the bars increases, so does its rating"</h4>
+									<p>
+										<li>There's a slight negative correlation between Cocoa Percent and Rating, i.e. chocolate bars with higher cocoa percentage tend to have lower ratings. </li>
+											<li>We can see from the plot that for chocolate bars containing over 90% cocoa, their ratings are mostly below 3.</li> 
+											<li>In fig 2., we see that for chocolates with cocoa percentage between 70% & 90 % the ratings are in between 2-4. </li>
+											<li>We can conclude that our moel performed poorly, and therefore we are unable to say that the cocoa percentages of the bars influences or predicts their ratings.</li>
+										</ul>
+									</p>
+										
+										<div class="box alt">
+											<div class="row gtr-50 gtr-uniform">
+												<div class="col-6"><span class="image fit"><img src="images/Choc Linear Reg.png" alt="" /></span></div>
+												<div class="col-6"><span class="image fit"><img src="images/Cluster 6.5 copy.png" alt="" /></span></div>
+
+												<hr class="major" />
+												<h2> 3. Time Series Analysis</h2>
+												<p>Through the time series analysis, we can forecast for the future based on the past values. 
+													The stationarity test tells us if the data is stationary (uniform mean and median and not affected by seasonality), which are very important to carry on the test.</p>
+
+												<span class="image fit"><img src="images/Choc Time Series.png" alt="" style="width: 80% !important"/></span>
+												</p>
+												
+							
+									<h2>Conclusion and Findings</h2>
+									<ul>
+									<p>	
+										<li style="color:#800000">A majority of chocolate manufacturing companies are situated in the US, but the best beans come from Central and South America.</li>
+										<li style="color:#800000">Upon conducting different kinds of analysis, we were not able to establish a relationship between the chocolate ratings and the percentage of Cocoa. This tells us that more factors are at play and needs further analysis.</li>
+										<li style="color:#800000">The data is narrowly based on just plain dark chocolate (min 70% cocoa) with an aim of appreciating the flavors of the cacao when made into chocolate. The sample is too small (one bar from one batch), which is not a good representation.</li>
+										<li style="color:#800000">If we want to take the <i>Ratings</i> as the target variable, knowing the statistics of variables such as <i>Cocoa Percent, <i>Company(if known)</i> etc., would be helpful. However, this .will require more bivariate, or even multivariate analysis on the correlation between variables.
+										</li>
+										</p>
+										</ul>
+
+
+								</section>
+
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Homepage</a></li>
+										<li><a href="generic.html">About Me</a></li>
+										
+										<li>
+											<span class="opener">Python Projects</span>
+											<ul>
+												<li><a href="Instacart.html">Instacart Grocery Basket</a></li>
+												<li><a href="Chocolate.html">Chocolate Bar Ratings</a></li>
+												
+												
+											</ul>
+										</li>
+										<li><a href="Rockbuster.html">SQL Project</a></li>
+										<li><a href="Influenza.html">Tableau Project</a></li>
+										<li><a href="GameCo.html">Excel Project</a></li>
+										<li>
+											
+									</ul>
+								</nav>
+
+							<!-- Section -->
+								
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Get in touch</h2>
+									</header>
+									
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="mailto:bhasinishita@gmail.com">bhasinishita@gmail.com</a></li>
+										
+										<li class="icon solid fa-home">Frankfurt, Germany<br />
+										</li>
+									</ul>
+									<ul class="icons">
+										<li><a href="https://www.linkedin.com/in/ishita-bhasin-fra/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+										<li><a href="https://github.com/ishitabhasin" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+										
+									</ul>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
